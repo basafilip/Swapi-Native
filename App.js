@@ -1,15 +1,18 @@
-import CharacterList from './components/CharacterList';
-import FavoriteCharacter from './components/FavoriteCharacter';
-import Welcome from './components/Welcome';
+import CharacterList from './pages/CharacterList';
+import FavoriteCharacter from './pages/FavoriteCharacter';
+import Welcome from './pages/Welcome';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import CharacterDetails from './components/CharacterDetails';
+import CharacterDetails from './pages/CharacterDetails';
+import {Provider, createStore} from 'react-redux';
+import store from './redux/store';
 
 const Stack = createStackNavigator();
 
 const YourApp = () => {
   return (
+    <Provider store={store}>
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
@@ -22,6 +25,7 @@ const YourApp = () => {
         <Stack.Screen name="Details" component={CharacterDetails}/>
       </Stack.Navigator>
     </NavigationContainer>
+    </Provider>
   )
 }
 

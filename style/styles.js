@@ -18,12 +18,12 @@ const styles = StyleSheet.create({
       marginBottom: 10
     },
     characterScreenContainer: {
-        flex: 1,
-        justifyContent: "center",
-        padding: 16,
-        alignItems: "center",
-        backgroundColor: "black"
-      },
+      flex: 1,
+      justifyContent: "center",
+      padding: 16,
+      alignItems: "center",
+      backgroundColor: "black"
+    },
     appButtonText: {
       fontSize: 18,
       color: "#fff",
@@ -31,6 +31,11 @@ const styles = StyleSheet.create({
       alignSelf: "center",
       textTransform: "uppercase",
       fontFamily: "Roboto"
+    },
+    loader: {
+      flex: 1, 
+      justifyContent:"center", 
+      alignItems: "center"
     }
 });
 
