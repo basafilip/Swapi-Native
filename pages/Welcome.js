@@ -12,7 +12,7 @@ const Welcome = ({navigation}) => {
 		>
 			<View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
 				<AppButton
-					title="List of all Characters"
+					title="List of Characters"
 					onPress={() =>
             navigation.navigate('List')
           }  

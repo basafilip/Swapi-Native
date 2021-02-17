@@ -13,16 +13,14 @@ export default function FavoriteCharacter() {
       source={StarWarsBg}
       style={{ flex: 1, resizeMode: "cover" }}
     >
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <ScrollView>
-          <Text style={styles.favoriteTitle}>Favorite Characters</Text>
-          {favorites && favorites.map((character, index) => (
-            <Text key={index} style={styles.favorite} >
-              {character.name}
-            </Text>
-          ))}
-        </ScrollView>
-      </View>
+      <ScrollView contentContainerStyle={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={styles.favoriteTitle}>Favorite Characters</Text>
+        {favorites && favorites.map((character, index) => (
+          <Text key={index} style={styles.favorite} >
+            {character.name}
+          </Text>
+        ))}
+      </ScrollView>
     </ImageBackground>
     )
 }
