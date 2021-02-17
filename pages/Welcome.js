@@ -8,13 +8,13 @@ const Welcome = ({navigation}) => {
 	return (
 		<ImageBackground
 			source={StarWarsBg}
-			style={{flex: 1, resizeMode: 'cover'}} /* nemoj ovako stilove stavljati, raje iz css-a*/
+			style={{flex: 1, resizeMode: 'cover'}}
 		>
 			<View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
 				<AppButton
 					title="List of all Characters"
 					onPress={() =>
-            navigation.navigate('Lista')
+            navigation.navigate('List')
           }  
 				/>
 				<AppButton

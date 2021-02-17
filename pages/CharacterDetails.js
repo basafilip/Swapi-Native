@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { Text, View, Button, ImageBackground, TouchableHighlight } from "react-native";
+import { Text, View, ImageBackground } from "react-native";
 import {useDispatch} from 'react-redux';
 import {addFavorite} from '../redux/favoritesSlice';
 import StarWarsBg from "../images/star-wars-background.jpg";

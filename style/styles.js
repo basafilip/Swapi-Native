@@ -36,6 +36,23 @@ const styles = StyleSheet.create({
       flex: 1, 
       justifyContent:"center", 
       alignItems: "center"
+    },
+    favorite: {
+      fontSize: 17,
+      color: "#fff",
+      fontWeight: "bold",
+      alignSelf: "center",
+      textTransform: "uppercase",
+      fontFamily: "Roboto",
+      padding: 5
+    },
+    favoriteTitle: {
+      fontSize: 25,
+      color: "#fff",
+      fontWeight: "bold",
+      alignSelf: "center",
+      textTransform: "uppercase",
+      fontFamily: "Roboto"
     }
 });
 

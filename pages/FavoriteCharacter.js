@@ -1,5 +1,5 @@
 import React from "react";
-import {Text, View, ImageBackground, FlatList} from "react-native";
+import {Text, View, ImageBackground} from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import { useSelector } from 'react-redux';
 import StarWarsBg from "../images/star-wars-background.jpg";
@@ -13,18 +13,16 @@ export default function FavoriteCharacter() {
       source={StarWarsBg}
       style={{ flex: 1, resizeMode: "cover" }}
     >
-      
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <ScrollView>
-          <Text style={styles.appButtonText}>Favorite Characters</Text>
+          <Text style={styles.favoriteTitle}>Favorite Characters</Text>
           {favorites && favorites.map((character, index) => (
-            <Text key={index} style={{ color: "#fff", fontSize:15, padding:5 }} >
+            <Text key={index} style={styles.favorite} >
               {character.name}
             </Text>
           ))}
-          </ScrollView>
-        </View>
-        
+        </ScrollView>
+      </View>
     </ImageBackground>
     )
 }
